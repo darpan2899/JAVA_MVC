@@ -1,0 +1,12 @@
+<web-app>
+ <servlet>
+   <servlet-name>serv1</servlet-name>
+   <servlet-class>RegisterServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+    <servlet-name>serv1</servlet-name>
+    <url-pattern>/doRegister</url-pattern>
+ </servlet-mapping>
+ 
+</web-app>

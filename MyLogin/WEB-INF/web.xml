@@ -1,0 +1,57 @@
+<web-app>
+ <filter>
+ </filter>
+ <filter-mapping>
+ </filter-mapping>
+ <servlet>
+    <init-param>
+	   <param-name>ConnectionLink</param-name>
+	   <param-value>jdbc:mysql://localhost:3306/AJT559</param-value>
+	</init-param>
+	
+	<init-param>
+	    <param-name>DriverName</param-name>
+	   <param-value>com.mysql.cj.jdbc.Driver</param-value>
+	</init-param>
+	
+	<init-param>
+	   <param-name>Username</param-name>
+	   <param-value>root</param-value>
+	</init-param>
+	
+	<init-param>
+	   <param-name>Password</param-name>
+	   <param-value>ROOT</param-value>
+	</init-param>
+	
+   <servlet-name>serv1</servlet-name>
+   <servlet-class>LoginServlet</servlet-class>
+   
+ </servlet>
+ 
+ <servlet>
+   <servlet-name>serv2</servlet-name>
+   <servlet-class>RegisterServlet</servlet-class>
+ </servlet>
+ 
+ <servlet>
+    <servlet-name>serv3</servlet-name>
+	<servlet-class>WelcomeServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+    <servlet-name>serv1</servlet-name>
+    <url-pattern>/doLogin</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>serv2</servlet-name>
+    <url-pattern>/doReg</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>serv3</servlet-name>
+    <url-pattern>/servlet3</url-pattern>
+ </servlet-mapping>
+ 
+</web-app>
