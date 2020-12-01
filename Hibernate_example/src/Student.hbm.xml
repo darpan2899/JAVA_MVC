@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 11, 2020 12:07:10 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.drv.DemoHib.Student" table="STUDENT">
+        <id name="id" type="double">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="Sem" type="int">
+            <column name="SEM" />
+        </property>
+        <property name="CPI" type="float">
+            <column name="CPI" />
+        </property>
+        <property name="Name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="username" type="java.lang.String" access="field">
+            <column name="USERNAME" />
+        </property>
+        <property name="password" type="java.lang.String" access="field">
+            <column name="PASSWORD" />
+        </property>
+    </class>
+</hibernate-mapping>
